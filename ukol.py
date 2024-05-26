@@ -13,7 +13,7 @@ data = response.json()
 
 # Získání informací o obchodním jméně a adrese sídla
 obchodni_jmeno = data.get("obchodniJmeno")
-adresa_sidla = data.get("textovaAdresa")
+adresa_sidla = data.get("sidlo").get("textovaAdresa")
 
 # Vypiš získané informace
 print(obchodni_jmeno)
